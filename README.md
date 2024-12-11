@@ -429,7 +429,7 @@ As shown in the figure, we use the above sample Salt value and Host field as the
 According to splicing the above values, the sample fingerprint is obtained as follows:
 
 ```bash
-22e6db08c5ef1889d64103a290ac145c
+d56da55231dfd8e9a4f3ad2e464f49e4
 ```
 
 Now that we know the above sample fingerprint, we can set the custom Header field and sample fingerprint in the RedGuard configuration file for malicious traffic interception. It is worth noting that we can extend multiple sample fingerprints, separated by commas, and the FieldName needs to be consistent with the Header field name configured in the Malleable Profile

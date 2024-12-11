@@ -429,7 +429,7 @@ http-get "listen2" {
 根据对上述值进行拼接得到sample指纹为：
 
 ```bash
-22e6db08c5ef1889d64103a290ac145c
+d56da55231dfd8e9a4f3ad2e464f49e4
 ```
 
 目前已知上述样本指纹，现在我们在RedGuard配置文件中设置自定义的Header字段及样本指纹用于恶意流量拦截。值得注意的是，我们可以拓展多个样本指纹，不同指纹之间以逗号分隔，FieldName需要和Malleable Profile中配置的Header字段名称保持一致。

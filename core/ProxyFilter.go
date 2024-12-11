@@ -127,7 +127,7 @@ func ProxyFilterManger(req *http.Request) (status bool) {
 
 	// sample finger verify
 	if f := req.Header.Get(fieldName); fieldName != "*" && fieldFinger != "*" && f != "" {
-		finger := lib.EncodeMD5(req.Header.Get("Host") + f)
+		finger := lib.EncodeMD5(req.Host + f)
 		logger.Noticef("Sample Finger: %s", finger)
 		if strings.Contains(fieldFinger, finger) /* finger Check*/ {
 			logger.Errorf("[DROP] Requested Sample Finger is forbidden to access")
